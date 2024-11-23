@@ -1,0 +1,89 @@
+/* Save this as style.css */
+body {
+    background: #111;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    position: relative;
+}
+
+.poem {
+    opacity: 0;
+    transition: opacity 2s, transform 2s;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin: 2rem 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.site-title {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-family: 'Times New Roman', serif;
+    letter-spacing: 1px;
+}
+
+.controls {
+    margin-top: 2rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.controls:hover {
+    opacity: 1;
+}
+
+.date {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .poem {
+        font-size: 1.2rem;
+    }
+    .site-title {
+        top: 1rem;
+        left: 1rem;
+    }
+}
